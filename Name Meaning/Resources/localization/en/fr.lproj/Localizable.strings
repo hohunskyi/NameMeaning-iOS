@@ -1,0 +1,24 @@
+/* 
+  Localizable-en.strings
+  Name Meaning
+
+  Created by Alenka Hohunska on 5/10/16.
+  Copyright © 2016 Hohunskyi. All rights reserved.
+*/
+
+"Back" = "Retour";
+"Male" = "Homme";
+"Female" = "Femme";
+"Unisex" = "Unisexe";
+"Gender" = "Genre";
+"The Name's Meaning" = "La signification du nom";
+"Details" = "Détails";
+"Popularity" = "Popularité";
+"Recommendations" = "Recommandations";
+"Meaning" = "Signification";
+"Origin" = "Origine";
+"Name's usage per year" = "Utilisation de Nom par an";
+"Notes" = "Notes";
+"Welcome!" = "Bienvenue!";
+"Are you looking the best name for your baby? Are you wondering what does your name mean? Will try to help you! Enjoy!" = "Vous cherchez le meilleur nom pour votre bébé? Vous vous demandez qu'est-ce que votre nom signifie? Vais essayer de vous aider! Amusez-vous!";
+
