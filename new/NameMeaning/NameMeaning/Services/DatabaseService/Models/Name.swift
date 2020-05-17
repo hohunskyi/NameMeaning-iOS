@@ -40,7 +40,6 @@ struct Name {
         static let recomendations = "ZRECOMMENTED"
         static let stats = "ZSTATS"
         static let origin = "ZORIGIN"
-        static let overview = "ZOVERVIEW"
     }
 
     let id : String
@@ -49,7 +48,6 @@ struct Name {
     let meaning : String
     let origin : String
 
-    let overview : String?
     let rating : Double?
     let stats : Stats?
     let notes  : String?
@@ -71,7 +69,6 @@ struct Name {
         self.meaning = meaning
         self.sex = Sex(rawValue: sex) ?? .boy
         self.origin = origin
-        self.overview = dictionary[Keys.overview] as? String
         self.stats = Stats(dictionary: dictionary[Keys.stats] as? [String: String])
         self.notes = dictionary[Keys.notes] as? String
 
