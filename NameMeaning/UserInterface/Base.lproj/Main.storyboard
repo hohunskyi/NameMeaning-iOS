@@ -58,6 +58,9 @@
                                 <rect key="frame" x="54" y="246" width="308" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="search"/>
+                                <connections>
+                                    <action selector="showList" destination="8q1-DP-lyx" eventType="touchUpInside" id="HzR-sy-DkP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -78,13 +81,32 @@
         <!--List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ListViewController" customModule="NameMeaning" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ListViewController" id="BYZ-38-t0r" customClass="ListViewController" customModule="NameMeaning" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gBO-Zg-m2J">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="em3-j7-Qyk"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="7aN-2F-2er"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gBO-Zg-m2J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WXN-bg-3UT"/>
+                            <constraint firstItem="gBO-Zg-m2J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WZ4-pW-XmD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gBO-Zg-m2J" secondAttribute="bottom" id="ef8-32-oVj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gBO-Zg-m2J" secondAttribute="trailing" id="jkg-Ca-mlH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="gBO-Zg-m2J" id="86z-JF-Fkp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

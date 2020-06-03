@@ -10,4 +10,8 @@ import UIKit
 
 final class HomeViewController: UIViewController {
 
+    @IBAction func showList() {
+        guard let viewController = ListViewControllerFactory().make() else { return }
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
 }

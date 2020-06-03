@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79E3A5A42488456000F2A6E2 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E3A5A32488456000F2A6E2 /* ListViewModel.swift */; };
+		79E3A5A6248848DD00F2A6E2 /* ListViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E3A5A5248848DD00F2A6E2 /* ListViewControllerFactory.swift */; };
 		79E57A832471A2970016FC62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E57A822471A2970016FC62 /* AppDelegate.swift */; };
 		79E57A852471A2970016FC62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E57A842471A2970016FC62 /* SceneDelegate.swift */; };
 		79E57A8A2471A2970016FC62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E57A882471A2970016FC62 /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79E3A5A32488456000F2A6E2 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		79E3A5A5248848DD00F2A6E2 /* ListViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewControllerFactory.swift; sourceTree = "<group>"; };
 		79E57A7F2471A2970016FC62 /* NameMeaning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NameMeaning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E57A822471A2970016FC62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79E57A842471A2970016FC62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				79E57AC12471C4E90016FC62 /* ListViewController.swift */,
+				79E3A5A32488456000F2A6E2 /* ListViewModel.swift */,
+				79E3A5A5248848DD00F2A6E2 /* ListViewControllerFactory.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -232,6 +238,8 @@
 				79E57A832471A2970016FC62 /* AppDelegate.swift in Sources */,
 				79E57AC52471C5F50016FC62 /* HomeViewController.swift in Sources */,
 				79E57A852471A2970016FC62 /* SceneDelegate.swift in Sources */,
+				79E3A5A6248848DD00F2A6E2 /* ListViewControllerFactory.swift in Sources */,
+				79E3A5A42488456000F2A6E2 /* ListViewModel.swift in Sources */,
 				79E57AB62471A5750016FC62 /* Origin.swift in Sources */,
 				79E57AC22471C4E90016FC62 /* ListViewController.swift in Sources */,
 				79E57ABE2471BBA50016FC62 /* DataCollection.swift in Sources */,
